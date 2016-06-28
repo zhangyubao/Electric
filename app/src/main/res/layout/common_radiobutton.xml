@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="11KV"
+             android:gravity="center_horizontal"
+             android:drawableBottom="@drawable/common_voltage_selector"
+             android:button="@null">
+
+</RadioButton>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_param_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="参数"
+        android:textColor="#6badbe"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_param_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_param_name"
+        android:padding="5dp"
+        android:text="参数说明"
+        android:textColor="#6badbe"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:background="@mipmap/icon_danger"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_param_name"
+        android:layout_marginTop="10dp"
+        android:background="#4a5472"/>
+
+</RelativeLayout>

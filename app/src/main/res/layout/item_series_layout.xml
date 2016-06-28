@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_series_main"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/common_main_bg"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="1.4dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#4b5572"/>
+
+        <ImageView
+            android:id="@+id/iv_device_image_series"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@mipmap/device_default"/>
+
+        <TextView
+            android:layout_width="1.4dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#4b5572"/>
+
+        <TextView
+            android:id="@+id/tv_outu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="3dp"
+            android:textColor="#ea5300"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_in_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="35KV进线柜名称"
+            android:textColor="@color/sys_top_text"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_inseries_ia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ia:32A"
+                android:textColor="#49ae6b"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

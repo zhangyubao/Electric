@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">鲁泰电气监控</string>
+    <string name="app_name_test">鲁泰电气监控</string>
+    <string name="home">首页</string>
+    <string name="system">系统图</string>
+    <string name="common">常用</string>
+    <string name="mine">我的</string>
+    <string name="load_failure">数据获取失败</string>
+    <string name="loading">Loading...</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="system_common_paramname" formatted="false"><![CDATA[<font color="#9caddf"><b>PARAMNAME</b></font>]]></string>
+    <string name="system_common_paramvalue" formatted="false"><![CDATA[<font color="#9caddf">PARAMNAME</font>]]></string>
+</resources>

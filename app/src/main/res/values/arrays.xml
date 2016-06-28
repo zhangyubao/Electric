@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="titles">
+        <item>全部</item>
+        <item>11KV</item>
+        <item>20kv</item>
+        <item>25kv</item>
+        <item>30kv</item>
+    </string-array>
+
+</resources>

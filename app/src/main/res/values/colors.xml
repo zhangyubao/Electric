@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="menu_bottom_bg">#F4F5F6</color>
+    <color name="black">#000000</color>
+    <color name="guide_bg">#D43D3D</color>
+    <color name="ring_color">#D43D3D</color>
+    <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#f5d903</color>
+    <color name="top_color_gray">#384059</color>
+    <color name="top_color_blue">#384059</color>
+    <color name="top_color_gra">#383c53</color>
+    <color name="common_main_bg">#343c52</color>
+    <color name="common_text_focus">#2d7ad1</color>
+    <color name="translate">#00000000</color>
+
+    <color name="top_common_color">#383c53</color>
+    <color name="top_view_split">#4b546f</color>
+
+    <color name="menu_text_press">#8594bc</color>
+    <color name="menu_text_normal">#262e44</color>
+    <color name="banner_red">#CD252B</color>
+    <color name="banner_gery_dark">#414141</color>
+    <color name="top_text_color">#f3f6f0</color>
+    <color name="common_press_bg">#cdcdcd</color>
+    <color name="main_title_background">#33cc99</color>
+    <!--System-->
+    <color name="sys_top_text">#96a0bd</color>
+    <color name="text_color">#353535</color>
+    <color name="item_patient_list_sub">#424242</color>
+    <color name="keyboard_text_normal">#0d0d0d</color>
+    <color name="list_text_color">#6b6b6b</color>
+
+</resources>
