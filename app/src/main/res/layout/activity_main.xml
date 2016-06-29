@@ -2,9 +2,9 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/ll_main_container"
     android:fitsSystemWindows="true">
 
     <RelativeLayout
@@ -17,7 +17,7 @@
             android:id="@+id/menu_tab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@mipmap/bg_bottom"
+            android:background="@mipmap/bottom_bg_new"
             android:gravity="bottom"
             android:orientation="horizontal"
             android:padding="@dimen/menu_bottom_padding">
@@ -27,6 +27,13 @@
                 style="@style/menu_bottom"
                 android:drawableTop="@drawable/menu_home_selector"
                 android:text="@string/home"
+                android:textColor="@drawable/menu_text_selector"/>
+
+            <RadioButton
+                android:id="@+id/rbtn_common"
+                style="@style/menu_bottom"
+                android:drawableTop="@drawable/menu_common_selector"
+                android:text="@string/common"
                 android:textColor="@drawable/menu_text_selector"/>
 
             <RadioButton
@@ -45,59 +52,59 @@
 
         </RadioGroup>
 
-        <RadioGroup
-            android:id="@+id/rg_common"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:gravity="center_horizontal"
-            android:visibility="gone">
+        <!--<RadioGroup-->
+            <!--android:id="@+id/rg_common"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:visibility="gone">-->
 
-            <RadioButton
-                android:id="@+id/rbtn_common"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="10dp"
-                android:background="@color/translate"
-                android:button="@null"
-                android:drawableTop="@drawable/menu_common_selector"
-                android:gravity="center_horizontal"
-                android:text="@string/common"
-                android:textColor="@drawable/menu_text_selector"
-                android:textSize="16sp"/>
-        </RadioGroup>
+            <!--<RadioButton-->
+                <!--android:id="@+id/rbtn_common"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="@color/translate"-->
+                <!--android:button="@null"-->
+                <!--android:drawableTop="@drawable/menu_common_selector"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:text="@string/common"-->
+                <!--android:textColor="@drawable/menu_text_selector"-->
+                <!--android:textSize="16sp"/>-->
+        <!--</RadioGroup>-->
 
-        <LinearLayout
-            android:id="@+id/ll_common"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:gravity="bottom"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
-            android:orientation="vertical">
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_common"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:gravity="bottom"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingLeft="8dp"-->
+            <!--android:paddingRight="8dp">-->
 
-            <ImageView
-                android:id="@+id/iv_common"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="-5dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/menu_common_selector"/>
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_common"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="-5dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:background="@drawable/menu_common_selector"/>-->
 
-            <TextView
-                android:id="@+id/tv_common"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="bottom"
-                android:text="@string/common"
-                android:textColor="@drawable/menu_text_selector"
-                android:textSize="16dp"/>
-        </LinearLayout>
+            <!--<TextView-->
+                <!--android:id="@+id/tv_common"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:text="@string/common"-->
+                <!--android:textColor="@drawable/menu_text_selector"-->
+                <!--android:textSize="16dp"/>-->
+        <!--</LinearLayout>-->
 
     </RelativeLayout>
 

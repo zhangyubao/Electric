@@ -10,11 +10,9 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lutai.electric.base.BaseActivity;
@@ -28,22 +26,20 @@ import com.orhanobut.logger.Logger;
 import java.util.HashMap;
 
 import butterknife.Bind;
-import butterknife.OnClick;
 import me.majiajie.pagerbottomtabstrip.Controller;
 
 public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener {
 
     @Bind(R.id.menu_tab)
     RadioGroup menuTab;
-    @Bind(R.id.rg_common)
-    RadioGroup menuCommon;
-    @Bind(R.id.rbtn_common)
-    RadioButton mRbtCommon;
-
-    @Bind(R.id.iv_common)
-    ImageView commonView;
-    @Bind(R.id.tv_common)
-    TextView commonText;
+    //    @Bind(R.id.rg_common)
+//    RadioGroup menuCommon;
+//    @Bind(R.id.rbtn_common)
+//    RadioButton mRbtCommon;
+//    @Bind(R.id.iv_common)
+//    ImageView commonView;
+//    @Bind(R.id.tv_common)
+//    TextView commonText;
     @Bind(R.id.ll_main_container)
     RelativeLayout mainContainer;
 
@@ -99,17 +95,17 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         return R.layout.activity_main;
     }
 
-    @OnClick(R.id.ll_common)
-    public void commonSelect() {
-        for (int i = 0; i < menuTab.getChildCount(); i++) {
-            ((RadioButton) menuTab.getChildAt(i)).setChecked(false);
-            ((RadioButton) menuTab.getChildAt(i)).setFocusable(false);
-        }
-        commonText.setTextColor(getResources().getColor(R.color.menu_text_press));
-        commonView.setBackgroundResource(R.mipmap.icon_star_normal);
-        mainContainer.setBackgroundColor(getResources().getColor(R.color.common_main_bg));
-        generateFragment("common", CommonFragment.class);
-    }
+//    @OnClick(R.id.ll_common)
+//    public void commonSelect() {
+//        for (int i = 0; i < menuTab.getChildCount(); i++) {
+//            ((RadioButton) menuTab.getChildAt(i)).setChecked(false);
+//            ((RadioButton) menuTab.getChildAt(i)).setFocusable(false);
+//        }
+//        commonText.setTextColor(getResources().getColor(R.color.menu_text_press));
+//        commonView.setBackgroundResource(R.mipmap.icon_star_normal);
+//        mainContainer.setBackgroundColor(getResources().getColor(R.color.common_main_bg));
+//        generateFragment("common", CommonFragment.class);
+//    }
 
     /**
      * 创建并添加Fragment
@@ -144,22 +140,27 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
 
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
-        commonText.setTextColor(getResources().getColor(R.color.menu_text_normal));
-        commonView.setBackgroundResource(R.mipmap.icon_star_selected);
+//        commonText.setTextColor(getResources().getColor(R.color.menu_text_normal));
+//        commonView.setBackgroundResource(R.mipmap.icon_star_selected);
         switch (checkedId) {
             case R.id.rbtn_home:
                 mainContainer.setBackgroundColor(getResources().getColor(R.color.white));
-                group.getChildAt(0).setFocusable(true);
+//                group.getChildAt(0).setFocusable(true);
                 generateFragment("home", HomeFragment.class);
+                break;
+            case R.id.rbtn_common:
+                mainContainer.setBackgroundColor(getResources().getColor(R.color.common_main_bg));
+//                group.getChildAt(1).setFocusable(true);
+                generateFragment("common", CommonFragment.class);
                 break;
             case R.id.rbtn_system:
                 mainContainer.setBackgroundColor(getResources().getColor(R.color.common_main_bg));
-                group.getChildAt(1).setFocusable(true);
+//                group.getChildAt(1).setFocusable(true);
                 generateFragment("system", SystemFragment.class);
                 break;
             case R.id.rbtn_mine:
                 mainContainer.setBackgroundColor(getResources().getColor(R.color.common_main_bg));
-                group.getChildAt(2).setFocusable(true);
+//                group.getChildAt(2).setFocusable(true);
                 generateFragment("mine", MineFragment.class);
                 break;
             default:
